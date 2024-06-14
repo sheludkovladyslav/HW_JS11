@@ -1,23 +1,21 @@
 // const weather = {
-//   temperature: null,
+//   temperature: parseFloat(document.getElementById("temperature__input").value),
 //   humidity: 3,
 //   windSpeed: 25,
 
 //   temperatureChecker() {
-//     const temperature = parseFloat(
-//       document.getElementById("temperature__input").value
-//     );
-//     if (temperature <= 0) {
-//       this.temperature = temperature;
-//       return alert("температура є нижче 0 або 0");
-//     }
-//     if (temperature > 0) {
-//       this.temperature = temperature;
-//       return alert("температура вижче нуля");
-//     }
+//     return this.temperature >= 0;
 //   },
 // };
 
 // document.getElementById("check").addEventListener("click", () => {
-//   weather.temperatureChecker();
+//   weather.temperature = parseFloat(
+//     document.getElementById("temperature__input").value
+//   );
+
+//   if (weather.temperatureChecker()) {
+//     alert("температура вище 0 або 0");
+//   } else {
+//     alert("температура нижче 0");
+//   }
 // });
