@@ -4,15 +4,9 @@ const user = {
   password: "1234",
 
   login() {
-    const inputPassword = document.getElementById("login-password");
-    const inputEmail = document.getElementById("login-email");
-    const userPassword = inputPassword.value;
-    const userEmail = inputEmail.value;
-    const loginCheck = document.getElementById("login-check");
-
-    loginCheck.addEventListener("click", () => {
-      const userPassword = inputPassword.value;
-      const userEmail = inputEmail.value;
+    document.getElementById("login-check").addEventListener("click", () => {
+      const userPassword = document.getElementById("login-password").value;
+      const userEmail = document.getElementById("login-email").value;
       if (userPassword === this.password && userEmail === this.email) {
         return alert("Вхід успішно виконано!");
       } else {
