@@ -1,0 +1,17 @@
+body {
+  font-family: $textFontPrimary;
+  font-weight: 400;
+  font-size: 14px;
+  overflow: scroll;
+  color: $colorTextPrimary;
+}
+
+.container {
+  min-width: 320px;
+}
+
+img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+}

@@ -1,0 +1,10 @@
+@mixin animation($transitionProperty) {
+  transition: $transitionProperty 350ms ease-in-out;
+}
+
+@mixin text($color, $size, $weight) {
+  color: $color;
+  font-family: Roboto;
+  font-size: $size;
+  font-weight: $weight;
+}

@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+  &__logo {
+    font-size: 22px;
+    font-weight: 400;
+    @include animation(color);
+    z-index: 1500;
+    &:hover {
+      color: #9c652c;
+    }
+    &:hover .header__logo--active {
+      color: $colorTextPrimary;
+    }
+    &--active {
+      color: #9c652c;
+      font-weight: 500;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.links__link {
+  @include text($colorTextPrimary, 16px, 400);
+  &--login {
+    border: 2px solid $borders;
+    border-radius: 5px;
+    padding: 10px 15px;
+    @include text($colorTextPrimary, 20px, 300);
+    @include animation(background-color);
+    &:hover {
+      background-color: $colorTextActive;
+      color: $colorTextSecondary;
+      border: none;
+    }
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+}
+
+.menu {
+  &__contacts {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    @include text($colorTextPrimary, 16px, 400);
+    @include animation(color);
+    &:hover {
+      color: $colorTextActive;
+    }
+  }
+  &__socialmedia {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    @include text($colorTextPrimary, 16px, 400);
+    @include animation(color);
+    &:hover {
+      color: $colorTextActive;
+    }
+  }
+}
