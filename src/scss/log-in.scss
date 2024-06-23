@@ -38,6 +38,13 @@ body {
   }
 }
 
+.close {
+  position: fixed;
+  top: 15px;
+  left: 25px;
+  font-size: 24px;
+}
+
 .label {
   font-size: 22px;
   margin-bottom: 5px;
