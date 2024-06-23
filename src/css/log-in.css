@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 10px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  overflow: scroll;
+  color: black;
+}
+
+.container {
+  min-width: 320px;
+}
+
+img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2431372549);
+  height: 100vh;
+}
+
+.log-in {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.log-in__wrapper {
+  padding: 40px 0;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  align-items: center;
+  border-radius: 5px;
+}
+.log-in__input {
+  border-radius: 10px;
+  border: 1.5px solid grey;
+  min-height: 20px;
+  padding-left: 7px;
+  outline: none;
+}
+
+.label {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.email,
+.name,
+.password {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.password {
+  margin-bottom: 5px;
+}
+
+.login__check {
+  background-color: transparent;
+  border: 1.5px solid #ececec;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 10px 30px;
+  font-size: 16px;
+  transition: border-color 350ms ease-in-out;
+  transition: transform 350ms ease-in-out;
+}
+.login__check:hover {
+  border-color: #dd872b;
+  transform: scale(1.2);
+}
+
+@media (max-width: 1239px) {
+  .log-in {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .log-in__wrapper {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1240px) {
+  .log-in {
+    padding: 0 30px;
+    width: 100%;
+  }
+  .log-in__wrapper {
+    flex-direction: row;
+  }
+}

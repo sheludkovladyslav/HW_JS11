@@ -4,7 +4,7 @@ const user = {
   password: "1234",
 
   login() {
-    document.getElementById("login-check").addEventListener("click", () => {
+    document.getElementById("check").addEventListener("click", () => {
       const userPassword = document.getElementById("login-password").value;
       const userEmail = document.getElementById("login-email").value;
       if (userPassword === this.password && userEmail === this.email) {

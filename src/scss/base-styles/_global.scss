@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 10px;
+}
+
 body {
   font-family: $textFontPrimary;
   font-weight: 400;

@@ -1,0 +1,98 @@
+@import "utils/mixins";
+@import "utils/variables";
+@import "base-styles/reset";
+@import "base-styles/global";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: $backdrop;
+  height: 100vh;
+}
+
+.log-in {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__wrapper {
+    padding: 40px 0;
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    background-color: $colorTextSecondary;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  &__input {
+    border-radius: 10px;
+    border: 1.5px solid grey;
+    min-height: 20px;
+    padding-left: 7px;
+    outline: none;
+  }
+}
+
+.label {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: $colorTextPrimary;
+}
+
+.email,
+.name,
+.password {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.password {
+  margin-bottom: 5px;
+}
+
+.login__check {
+  background-color: transparent;
+  border: 1.5px solid $borders;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 10px 30px;
+  font-size: 16px;
+  @include animation(border-color);
+  @include animation(transform);
+
+  &:hover {
+    border-color: $colorTextActive;
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 1239px) {
+  .log-in {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .log-in {
+    &__wrapper {
+      max-width: 400px;
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+  .log-in {
+    padding: 0 30px;
+    width: 100%;
+  }
+
+  .log-in__wrapper {
+    flex-direction: row;
+  }
+}

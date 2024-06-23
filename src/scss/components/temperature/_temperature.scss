@@ -1,0 +1,141 @@
+.temperature {
+  &__title {
+    margin: 30px 0 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.temperature__checker {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+  gap: 12px;
+}
+
+.temperature {
+  &__city,
+  &__speed,
+  &__temperature {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  &__input {
+    border: 1.2px solid $backdrop;
+    border-radius: 7px;
+    padding-left: 10px;
+    min-height: 20px;
+    outline: none;
+    max-width: 420px;
+
+    &:active {
+      border-color: $colorTextActive;
+    }
+  }
+
+  &__check {
+    align-self: center;
+    border: 1px solid $backdrop;
+    padding: 10px 15px;
+    background-color: transparent;
+    border-radius: 5px;
+    @include animation(border-color);
+    @include animation(transform);
+    &:hover {
+      border-color: $colorTextActive;
+      transform: scale(1.2);
+    }
+  }
+}
+
+@media (min-width: 565px) {
+  .temperature {
+    &__checker {
+      align-items: center;
+    }
+    &__input {
+      min-width: 320px;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .city__label,
+  .speed__title,
+  .temperature__label {
+    font-size: 18px;
+    align-items: center;
+  }
+
+  .temperature {
+    &__input {
+      min-height: 25px;
+      font-size: 14px;
+    }
+  }
+
+  .temperature {
+    &__city,
+    &__speed,
+    &__temperature {
+      gap: 5px;
+      align-items: center;
+    }
+
+    &__input {
+      min-width: 420px;
+    }
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 30px;
+      padding-top: 20px;
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+  .city__label,
+  .speed__title,
+  .temperature__label {
+    font-size: 20px;
+    align-items: center;
+  }
+
+  .temperature {
+    &__input {
+      min-height: 25px;
+      font-size: 14px;
+    }
+
+    &__checker {
+      gap: 15px;
+    }
+  }
+
+  .temperature {
+    &__city,
+    &__speed,
+    &__temperature {
+      gap: 10px;
+      align-items: center;
+    }
+
+    &__input {
+      min-width: 460px;
+    }
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 30px;
+      padding-top: 20px;
+    }
+  }
+}

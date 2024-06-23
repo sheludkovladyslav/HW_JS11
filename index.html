@@ -23,61 +23,238 @@
   </head>
   <body>
     <header class="header">
-      <h2 class="header__logo logo">
-        Multi<span class="header__logo--active">Tools</span>
-      </h2>
-      <nav class="header__nav nav" data-menu>
-        <div class="menu nav__list">
-          <ul class="menu__list links">
-            <li class="links__item">
-              <a class="links__link" href="">Bank System</a>
-            </li>
-            <li class="links__item">
-              <a class="links__link" href="">Temperature Checker</a>
-            </li>
-            <li class="links__item">
-              <a class="links__link links__link--opened" href="index.html"
-                >Movie Library</a
-              >
-            </li>
-            <li class="links__item">
-              <a class="links__link links__link--login" href="index.html"
-                >Log-In</a
-              >
-            </li>
-          </ul>
-          <div class="nav__list-wrapper">
-            <ul class="menu__contacts contacts">
-              <li class="contacts__item">
-                <a href="" class="contacts__link contacts__link--active"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="contacts__item">
-                <a href="" class="nav__link">+38 096 111 11 11</a>
-              </li>
-            </ul>
-            <ul class="socialmedia menu__socialmedia">
-              <li class="socialmedia__item">
-                <a class="nav__link menu__link" href="">Instagram</a>
-              </li>
-              <li class="socialmedia__item">
-                <a class="nav__link menu__link" href="">Twitter</a>
-              </li>
-              <li class="socialmedia__item">
-                <a class="nav__link menu__link" href="">Facebook</a>
-              </li>
-              <li class="socialmedia__item">
-                <a class="nav__link menu__link" href="">LinkedIn</a>
-              </li>
-            </ul>
+      <div class="header__container container">
+        <h2 class="header__logo logo">
+          Multi<span class="header__logo--active">Tools</span>
+        </h2>
+        <nav class="header__nav nav" data-menu>
+          <div class="menu nav__list">
+            <div class="nav__wrapper">
+              <ul class="menu__list links">
+                <li class="links__item">
+                  <a class="links__link" href="">Bank System</a>
+                </li>
+                <li class="links__item">
+                  <a class="links__link" href="#temperature"
+                    >Temperature Checker</a
+                  >
+                </li>
+                <li class="links__item">
+                  <a class="links__link" href="#movie-library">Movie Library</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__list-wrapper">
+              <ul class="menu__contacts contacts">
+                <li class="contacts__item">
+                  <a href="" class="contacts__link contacts__link--active"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a href="" class="nav__link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+              <ul class="socialmedia menu__socialmedia">
+                <li class="socialmedia__item">
+                  <a class="nav__link menu__link" href="">Instagram</a>
+                </li>
+                <li class="socialmedia__item">
+                  <a class="nav__link menu__link" href="">Twitter</a>
+                </li>
+                <li class="socialmedia__item">
+                  <a class="nav__link menu__link" href="">Facebook</a>
+                </li>
+                <li class="socialmedia__item">
+                  <a class="nav__link menu__link" href="">LinkedIn</a>
+                </li>
+              </ul>
+
+              <ul class="log-in menu__login">
+                <li class="links__item links__item--login">
+                  <a class="links__link links__link--login" href="login.html"
+                    >Log-In</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <button class="nav__btn btn-menu" data-open_btn>
-          <span class="btn-menu__icon"></span>
-        </button>
-      </nav>
+          <button class="nav__btn btn-menu" data-open_btn>
+            <span class="btn-menu__icon"></span>
+          </button>
+        </nav>
+      </div>
     </header>
+
+    <section class="library movie-library" id="movie-library">
+      <div class="movie__container container">
+        <h2 class="library__title">Movie Library</h2>
+        <ul class="movies movies__list">
+          <li class="movies__item movie">
+            <div class="img__container">
+              <img src="/src/img/spider-man.jpeg" alt="" class="movie__img" />
+            </div>
+            <div class="movie__content">
+              <h3 class="movie__title">
+                Movie title: <span id="movie-title-0"></span>
+              </h3>
+              <p class="movie__director">
+                Movie director: <span id="movie-director-0"></span>
+              </p>
+              <p class="movie__year">
+                Movie Year: <span id="movie-year-0"></span>
+              </p>
+              <p class="movie__rating">
+                Movie Rating: <span id="movie-rating-0"></span>
+              </p>
+            </div>
+          </li>
+          <li class="movies__item movie">
+            <div class="img__container">
+              <img src="/src/img/spider-man.jpeg" alt="" class="movie__img" />
+            </div>
+
+            <div class="movie__content">
+              <h3 class="movie__title">
+                Movie title: <span id="movie-title-1"></span>
+              </h3>
+              <p class="movie__director">
+                Movie director: <span id="movie-director-1"></span>
+              </p>
+              <p class="movie__year">
+                Movie Year: <span id="movie-year-1"></span>
+              </p>
+              <p class="movie__rating">
+                Movie Rating: <span id="movie-rating-1"></span>
+              </p>
+            </div>
+          </li>
+          <li class="movies__item movie">
+            <div class="img__container">
+              <img src="/src/img/spider-man.jpeg" alt="" class="movie__img" />
+            </div>
+            <div class="movie__content">
+              <h3 class="movie__title">
+                Movie title: <span id="movie-title-2"></span>
+              </h3>
+              <p class="movie__director">
+                Movie director: <span id="movie-director-2"></span>
+              </p>
+              <p class="movie__year">
+                Movie Year: <span id="movie-year-2"></span>
+              </p>
+              <p class="movie__rating">
+                Movie Rating: <span id="movie-rating-2"></span>
+              </p>
+            </div>
+          </li>
+          <li class="movies__item movie">
+            <div class="img__container">
+              <img src="/src/img/spider-man.jpeg" alt="" class="movie__img" />
+            </div>
+            <div class="movie__content">
+              <h3 class="movie__title">
+                Movie title: <span id="movie-title-3"></span>
+              </h3>
+              <p class="movie__director">
+                Movie director: <span id="movie-director-3"></span>
+              </p>
+              <p class="movie__year">
+                Movie Year: <span id="movie-year-3"></span>
+              </p>
+              <p class="movie__rating">
+                Movie Rating: <span id="movie-rating-3"></span>
+              </p>
+            </div>
+          </li>
+          <li class="movies__item movie">
+            <div class="img__container">
+              <img src="/src/img/spider-man.jpeg" alt="" class="movie__img" />
+            </div>
+            <div class="movie__content">
+              <h3 class="movie__title">
+                Movie title: <span id="movie-title-4"></span>
+              </h3>
+              <p class="movie__director">
+                Movie director: <span id="movie-director-4"></span>
+              </p>
+              <p class="movie__year">
+                Movie Year: <span id="movie-year-4"></span>
+              </p>
+              <p class="movie__rating">
+                Movie Rating: <span id="movie-rating-4"></span>
+              </p>
+            </div>
+          </li>
+          <li class="movies__item movie">
+            <div class="img__container">
+              <img src="/src/img/spider-man.jpeg" alt="" class="movie__img" />
+            </div>
+            <div class="movie__content">
+              <h3 class="movie__title-5">
+                Movie title: <span id="movie-title-5"></span>
+              </h3>
+              <p class="movie__director">
+                Movie director: <span id="movie-director-5"></span>
+              </p>
+              <p class="movie__year">
+                Movie Year: <span id="movie-year-5"></span>
+              </p>
+              <p class="movie__rating">
+                Movie Rating: <span id="movie-rating-5"></span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="temperature" id="temperature">
+      <div class="temperature__container">
+        <div class="temperature__title">Temperature Checker</div>
+        <div class="temperature__checker">
+          <div class="temperature__city">
+            <label for="city" class="city__label"
+              >Введіть назву вашого міста</label
+            >
+            <input
+              type="text"
+              id="city"
+              class="city__input temperature__input"
+            />
+          </div>
+          <div class="temperature__speed">
+            <label for="speed" class="speed__title"
+              >Введіть швидкість вітру</label
+            >
+            <input
+              type="text"
+              id="speed"
+              class="speed__input temperature__input"
+            />
+          </div>
+          <div class="temperature__temperature">
+            <label for="temperature__input" class="temperature__label"
+              >Введіть температуру повітря</label
+            >
+            <input
+              type="number"
+              class="temperature__input temperature__input"
+              id="temperature__input"
+            />
+          </div>
+          <button class="temperature__check" id="temperature-check">
+            Внести в БД
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <h1>
+      В СИСТЕМІ БАНКУ ЗРОБИТИ ЩОБ ЩЕ ЛЮДИНА ВВОДИЛА НОМЕР КАРТИ І ПЕРЕВІРЯТИ НА
+      КІЛЬКІСТЬ СИМВОЛІВ
+    </h1>
+
     <!-- <div class="task1">
       <div class="bank">
         <div class="bank__values">
@@ -100,22 +277,6 @@
       <button class="temperature__check" id="check">check</button>
     </div> -->
 
-    <div class="log-in">
-      <label for="login-name" class="label">Name</label>
-      <input type="text" class="log-in__name log-in__input" id="login-name" />
-
-      <label for="login-email" class="label">E-mail</label>
-      <input type="text" class="log-in__email log-in__input" id="login-email" />
-
-      <label for="login-password" class="label">Password</label>
-      <input
-        type="text"
-        class="log-in__password log-in__input"
-        id="login-password"
-      />
-
-      <button class="check" id="login-check">check</button>
-    </div>
     <!-- 
     <article class="movie">
       <h2 class="">Movie</h2>
@@ -129,7 +290,7 @@
     <script type="module" src="/src/js/mobile-menu.js"></script>
     <script type="module" src="/src/js/task-1.js"></script>
     <script type="module" src="/src/js/task-2.js"></script>
-    <script type="module" src="/src/js/task-3.js"></script>
-    <script type="module" src="/src/js/task-4.js"></script>
+    <script type="module" src="/src/js/movie.js"></script>
+    <script type="module" src="/src/js/log-in.js"></script>
   </body>
 </html>
