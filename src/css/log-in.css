@@ -40,7 +40,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   overflow: scroll;
-  color: black;
+  color: #2f303a;
 }
 
 .container {
@@ -89,7 +89,7 @@ body {
 .label {
   font-size: 22px;
   margin-bottom: 5px;
-  color: black;
+  color: #2f303a;
 }
 
 .email,

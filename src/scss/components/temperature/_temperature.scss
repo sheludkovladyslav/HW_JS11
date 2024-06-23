@@ -5,13 +5,16 @@
     font-weight: 700;
     text-align: center;
   }
+  &__container {
+    margin-bottom: 20px;
+  }
 }
 
 .temperature__checker {
   display: flex;
   flex-direction: column;
   padding-inline: 20px;
-  gap: 12px;
+  gap: 16px;
 }
 
 .temperature {
@@ -42,22 +45,30 @@
     padding: 10px 15px;
     background-color: transparent;
     border-radius: 5px;
-    @include animation(border-color);
+    color: $colorTextTertiary;
     @include animation(transform);
+
     &:hover {
       border-color: $colorTextActive;
       transform: scale(1.2);
+      color: $colorTextPrimary;
     }
   }
 }
 
 @media (min-width: 565px) {
+  .city__label,
+  .speed__title,
+  .temperature__label {
+    font-size: 16px;
+  }
   .temperature {
     &__checker {
       align-items: center;
     }
     &__input {
-      min-width: 320px;
+      min-width: 420px;
+      min-height: 25px;
     }
 
     &__title {
@@ -76,7 +87,7 @@
 
   .temperature {
     &__input {
-      min-height: 25px;
+      min-height: 30px;
       font-size: 14px;
     }
   }
@@ -89,8 +100,16 @@
       align-items: center;
     }
 
+    &__check {
+      font-size: 16px;
+    }
+
+    &__checker {
+      gap: 23px;
+    }
+
     &__input {
-      min-width: 420px;
+      min-width: 520px;
     }
 
     &__title {
@@ -112,11 +131,16 @@
   .temperature {
     &__input {
       min-height: 25px;
-      font-size: 14px;
+      font-size: 16px;
+      min-height: 35px;
+    }
+
+    &__container {
+      margin-bottom: 40px;
     }
 
     &__checker {
-      gap: 15px;
+      gap: 25px;
     }
   }
 
@@ -129,7 +153,7 @@
     }
 
     &__input {
-      min-width: 460px;
+      min-width: 560px;
     }
 
     &__title {

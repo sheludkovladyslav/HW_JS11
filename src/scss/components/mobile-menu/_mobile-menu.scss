@@ -93,8 +93,16 @@
 
 .menu__list {
   display: flex;
-  gap: 35px;
+
   flex-direction: column;
+}
+
+.links__link {
+  @include animation(border-bottom);
+  &:hover {
+    border-bottom: 2px solid $colorTextActive;
+    border-radius: 2px;
+  }
 }
 
 .nav__link--opened,

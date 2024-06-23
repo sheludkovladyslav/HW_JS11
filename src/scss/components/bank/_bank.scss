@@ -1,0 +1,158 @@
+.bank {
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+    gap: 20px;
+    min-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  &__labels {
+    font-size: 16px;
+  }
+
+  &__inputs {
+    border: 1.5px solid $backdrop;
+    border-radius: 15px;
+    padding-inline: 10px;
+    min-height: 25px;
+    outline: none;
+  }
+
+  &__buttons {
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+  }
+  &__button {
+    background-color: transparent;
+    border: 1.5px solid $backdrop;
+    padding: 10px 15px;
+    color: $colorTextTertiary;
+    border-radius: 10px;
+    @include animation(transform);
+
+    &:hover {
+      color: $colorTextPrimary;
+      transform: scale(1.2);
+    }
+  }
+}
+
+.card__confidential {
+  display: flex;
+  gap: 5px;
+  padding-top: 5px;
+}
+
+.confidential__input,
+.confidential__month {
+  border: 1.2px solid $backdrop;
+  border-radius: 7px;
+  min-height: 20px;
+  padding-left: 5px;
+  outline: none;
+  color: $colorTextTertiary;
+  max-width: 60px;
+}
+
+.card__number,
+.bank__sum-container,
+.choose__account,
+.card__type {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bank__balance {
+  @include animation(transform);
+  display: flex;
+  justify-content: center;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.bank__result {
+  border: 1px solid $colorTextTertiary;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+@media (min-width: 565px) {
+  .bank {
+    &__container {
+      align-items: center;
+    }
+    &__title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card__number,
+    .bank__sum-container,
+    .choose__account,
+    .card__type {
+      min-width: 420px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .bank {
+    &__container {
+      gap: 25px;
+    }
+    &__title {
+      font-size: 24px;
+    }
+
+    &__inputs {
+      font-size: 15px;
+      min-height: 30px;
+    }
+
+    &__button,
+    &__result {
+      font-size: 16px;
+    }
+
+    .card__number,
+    .bank__sum-container,
+    .choose__account,
+    .card__type {
+      min-width: 520px;
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+  .bank {
+    &__title {
+      font-size: 32px;
+    }
+
+    &__inputs {
+      font-size: 16px;
+      min-height: 35px;
+    }
+    .card__number,
+    .bank__sum-container,
+    .choose__account,
+    .card__type {
+      min-width: 560px;
+    }
+    &__button,
+    &__result {
+      font-size: 17px;
+    }
+  }
+}
