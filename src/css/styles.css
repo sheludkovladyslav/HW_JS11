@@ -115,6 +115,10 @@ img {
   gap: 30px;
 }
 
+ul.log-in.menu__login {
+  align-self: flex-start;
+}
+
 .menu__contacts {
   display: flex;
   flex-direction: column;
